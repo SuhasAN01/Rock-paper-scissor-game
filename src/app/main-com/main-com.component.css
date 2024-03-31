@@ -1,0 +1,95 @@
+.main_btn {
+    margin-top: 20px; /* Adjusted margin-top to move the button up */
+    padding: 20px 30px; /* Added padding */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    font-size: 100%;
+    border: solid 7px rgb(238, 73, 12);
+    border-color: aqua red;
+    background-color: gold;
+    color: black;
+    text-transform: uppercase;
+    transition: all 1s ease; /* Adding transition effect */
+    position: relative; /* Ensure proper positioning for transformations */
+    overflow: hidden; /* Ensure overflow is hidden for transformations */
+}
+
+.main_btn:hover {
+    margin-top: 100px;
+    height: 250px;
+    width: 250px;
+    font-size: 200%;
+    border-width: 14px;
+    background: linear-gradient(45deg, rgba(255,165,0,0.8), rgba(255,69,0,0.8)); /* Gradient color */
+    color: black;
+    transform: scale(1.2) rotate(15deg) skew(-10deg, 10deg); /* Different transformation */
+}
+.container-fluid{
+    background: linear-gradient(to right, #c2d48d, #b2d5de);
+    color: black;
+    
+}
+
+.hum1{
+    height: 30px;
+    padding: 5px;
+    color:aliceblue;
+    border: solid 3px black;
+}
+
+.human {
+  margin-bottom: 35px; /* Increased margin-bottom for more spacing */
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 100px;
+  background-color: #4C43CD;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+  
+  .human:hover {
+    background-image: linear-gradient(to bottom right, #FF0000, #0b0bf1);
+    box-shadow: 2px 25px 40px rgba(0, 0, 0, 0.4);
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .main_box{
+    margin-top: 55px;
+    border-radius: 5%;
+  }
+  .game_vid{
+    border: solid 5px;
+    border-radius: 20%;
+    height: 200px;
+  }
+  .img11{
+    margin-top: 9px;
+    border-radius: 55%;
+  }
+  hr{
+    border:solid 5px black;
+    size: 20px;
+  }
+
+  

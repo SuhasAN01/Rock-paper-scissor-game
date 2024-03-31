@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 text-center">
+
+        <button [hidden]="start_but" class="btn btn-info main_btn " (click)="start_game()"><b>Start Game</b></button>
+    <div [hidden]="!start_but">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+
+                    <div class="row">
+                        <div class="col-12 bg-danger mt-2 rounded hum1">HUMAN</div>
+                    </div><br>
+                    <button (click)="paper()" class="btn btn-primary human">Paper</button><br>
+                    <button (click)="rock()" class="btn btn-primary human">Rock</button><br>
+                    <button (click)="sci()" class="btn btn-primary human">Scissor</button><br>
+
+                </div>
+                <div class="col-4 main_box">
+
+                <div class="row">
+                    <div class="col-6 game_vid">
+                        <img [src]="left_img_url" height="175px" width="175px" class="img11">
+                    </div>
+                    <div class="col-6 game_vid">
+                        <img [src]="right_img_url" height="175px" width="175px" class="img11">  
+                    </div>
+        
+                </div>
+                <br>
+                <hr>
+                <!--match no-->
+                <div class="row">
+                <div class="col-12"><h2>Match Number <span style="color: red;">{{t_match}} </span></h2></div>
+                </div>
+ 
+                 <!--score-->
+                 <div class="row">
+                    <div class="col-6" [style.backgroundColor]="hwin"><h2>Human</h2><hr>
+                    <h4>WIN:<span style="color: green; font: weight 700px;"><b>{{h_win}}</b></span></h4>
+                    <h4>DRAW:<span style="color: green; font: weight 700px;"><b>{{h_draw}}</b></span></h4>
+                    <h4>LOSS:<span style="color: green; font: weight 700px;"><b>{{h_loss}}</b></span></h4>
+                </div>
+                    <div  class="col-6" [style.backgroundColor]="mwin"><h2>Machine</h2><hr>
+                        <h4>WIN:<span style="color: green; font: weight 700px;"><b>{{m_win}}</b></span></h4>
+                    <h4>DRAW:<span style="color: green; font: weight 700px;"><b>{{m_draw}}</b></span></h4>
+                    <h4>LOSS:<span style="color: green; font: weight 700px;"><b>{{m_loss}}</b></span></h4>
+
+                    </div>
+                    </div>
+
+
+                </div>
+                <div class="col-4">
+
+                    <div class="row">
+                        <div class="col-12 bg-danger mt-2 rounded hum1">MACHINE</div>
+                    </div><br>
+                    <button class="btn btn-primary human" [hidden]="ppr">Paper</button><br>
+                    <button class="btn btn-primary human" [hidden]="rck">Rock</button><br>
+                    <button class="btn btn-primary human" [hidden]="scr">Scissor</button><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="col-md-1"></div>
+    </div>
+</div>

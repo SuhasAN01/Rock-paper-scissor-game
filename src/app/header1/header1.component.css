@@ -1,0 +1,16 @@
+.main_head{
+    background-color: #f6f8f7;
+    height: 100px;
+    padding: 5px;
+    padding-bottom: 90px; /* Adjusted padding to create space for the logo */
+}
+
+img {
+    max-width: 100%; /* Added to ensure images do not overflow their containers */
+    height: auto;
+}
+
+.logo{
+    max-width: 100%;
+    max-height: 90px; /* Adjusted maximum height of the logo */
+}
